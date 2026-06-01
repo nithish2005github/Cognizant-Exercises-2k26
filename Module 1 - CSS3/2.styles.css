@@ -1,0 +1,25 @@
+/* Style for page heading */
+
+h1{
+    color:#0056b3;
+    text-align:center;
+}
+
+/* Style for main CTA button */
+
+.cta-button{
+    background-color:#007bff;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+/* Style for event card */
+
+.eventCard{
+    background-color:#f4f4f4;
+    border:1px solid #ccc;
+    padding:20px;
+    margin:20px;
+}

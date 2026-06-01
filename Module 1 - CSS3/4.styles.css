@@ -1,0 +1,35 @@
+body{
+    background-color:#e6f2ff;
+    background-image:url("https://picsum.photos/1200/800");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+#mainHeader{
+    background-color:rgba(0,86,179,0.9);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+h2{
+    background:linear-gradient(to right,#0056b3,#00aaff);
+    color:white;
+    text-align:center;
+    padding:12px;
+}
+
+.eventCard{
+    background-color:rgba(255,255,255,0.9);
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+
+h3{
+    color:#0056b3;
+}
+
+p{
+    color:#333333;
+}

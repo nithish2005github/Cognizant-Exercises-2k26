@@ -1,0 +1,30 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#0056b3;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.eventCard{
+    width:60%;
+    margin:20px auto;
+    padding:20px;
+    background:white;
+    border:1px solid #ccc;
+}
+
+@media screen and (max-width:768px){
+
+    .eventCard{
+        width:90%;
+    }
+
+    h1{
+        font-size:24px;
+    }
+}
