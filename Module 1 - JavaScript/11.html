@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Forms</title>
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event Registration</h1>
+
+    <form id="registrationForm">
+
+        <input type="text" name="name" placeholder="Enter Name">
+        <span id="nameError" class="error"></span>
+
+        <br><br>
+
+        <input type="email" name="email" placeholder="Enter Email">
+        <span id="emailError" class="error"></span>
+
+        <br><br>
+
+        <select name="event">
+            <option value="">Select Event</option>
+            <option>Music Festival</option>
+            <option>Food Fair</option>
+            <option>Sports Meet</option>
+        </select>
+        <span id="eventError" class="error"></span>
+
+        <br><br>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <script src="11.js"></script>
+
+</body>
+</html>
