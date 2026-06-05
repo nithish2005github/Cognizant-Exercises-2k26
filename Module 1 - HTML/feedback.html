@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            display: block;
+            width: 300px;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Feedback</h2>
+
+    <input type="text" id="phone" placeholder="Enter Phone Number" onblur="validatePhone()">
+
+    <select id="eventType" onchange="showFee()">
+        <option value="">Select Event</option>
+        <option value="100">Music Festival</option>
+        <option value="150">Food Fair</option>
+        <option value="200">Sports Meet</option>
+    </select>
+
+    <p id="fee"></p>
+
+    <img src="event.jpg" alt="Event Image" ondblclick="enlargeImage(this)">
+
+    <textarea id="feedback" rows="5" placeholder="Enter Feedback" onkeyup="countChars()"></textarea>
+
+    <p>Character Count: <span id="count">0</span></p>
+
+    <button onclick="submitFeedback()">Submit</button>
+
+    <script>
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+
+            if (phone.length !== 10 || isNaN(phone)) {
+                alert("Enter a valid 10-digit phone number");
+            }
+        }
+
+        function showFee() {
+            let fee = document.getElementById("eventType").value;
+            document.getElementById("fee").innerHTML = "Event Fee: ₹" + fee;
+        }
+
+        function submitFeedback() {
+            alert("Feedback submitted successfully!");
+        }
+
+        function enlargeImage(img) {
+            img.style.width = "400px";
+        }
+
+        function countChars() {
+            let text = document.getElementById("feedback").value;
+            document.getElementById("count").innerHTML = text.length;
+        }
+    </script>
+
+</body>
+</html>
